@@ -58,6 +58,8 @@ or do anything else in [src/main/java](src/main/java).
 
 You have three options to trigger an application restart and browser refresh:
 
+###### Hint: You can change the `spring.devtools.restart.poll-interval` and `spring.devtools.restart.quiet-period` properties in [application.properties](src/main/resources/application.properties) to change the behaviour on slow machines.
+
 ##### Option 1: Activate 'Build project automatically' in IntelliJ IDEA
 
 You press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ IDEA, search for `Build project automatically` and enable `Build project automatically`.
@@ -65,8 +67,6 @@ You press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ IDEA, searc
 You press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ, search for `Registry...` and enable `compiler.automake.allow.when.app.running`.
 
 You press `File → Safe All` / `STRG + S` in IntelliJ to save all, IntelliJ should automatically build changed files.
-
-###### Hint: You can change the `spring.devtools.restart.poll-interval` and `spring.devtools.restart.quiet-period` properties in [application.properties](src/main/resources/application.properties) to change the behaviour on slow machines.
 
 ##### Option 2: Build the project in IntelliJ IDEA manually
 
