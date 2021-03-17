@@ -64,9 +64,9 @@ You press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ IDEA, searc
 
 You press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ, search for `Registry...` and enable `compiler.automake.allow.when.app.running`.
 
-You press `Silfe → Safe All` / `STRG + S` in IntelliJ to save all, IntelliJ should automatically build changed files.
+You press `File → Safe All` / `STRG + S` in IntelliJ to save all, IntelliJ should automatically build changed files.
 
-###### Hint: You can change the `spring.devtools.restart.poll-interval` and `spring.devtools.restart.quiet-period` propertie in [application.properties](src/main/resources/application.properties) to change the behaviour on slow machines.
+###### Hint: You can change the `spring.devtools.restart.poll-interval` and `spring.devtools.restart.quiet-period` properties in [application.properties](src/main/resources/application.properties) to change the behaviour on slow machines.
 
 ##### Option 2: Build the project in IntelliJ IDEA manually
 
