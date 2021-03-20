@@ -83,15 +83,16 @@ of the maven property `exclude.devtools` specified and used in the [pom.xml](pom
 To trigger an application restart and browser refresh you have two other options instead
 of press `Build → Build Project` / `STRG + F9` in IntelliJ IDEA.
 
-You can recompile only a specific class in IntelliJ IDEA: To do this, press
+- You can recompile only a specific class in IntelliJ IDEA: To do this, press
 `Build → Recompile '*.java' ` / `STRG + SHIFT + F9`.
 
 Also, you can activate 'Build project automatically' in IntelliJ IDEA to let the IDE build changed classes automatically:
 
-Press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ IDEA, search for `Build project automatically` and enable `Build project automatically`.
+Press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ IDEA, search for `Build project automatically` and enable it.
 
 Press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ, search for `Registry...` and enable `compiler.automake.allow.when.app.running`.
 
-Now when you press `File → Safe All` / `STRG + S` in IntelliJ to save all, IntelliJ should automatically build changed files.
+Now when you press `File → Safe All` / `STRG + S` in IntelliJ to save all, IntelliJ should automatically build - only the changed files.
 
 > You can change the `spring.devtools.restart.poll-interval` and `spring.devtools.restart.quiet-period` properties in [application.properties](src/main/resources/application.properties) to change the behaviour on slow machines.
+More information about these properties you can find in the [documentation](https://docs.spring.io/spring-boot/docs/2.4.3/reference/html/using-spring-boot.html#using-boot-devtools-remote-update) of Spring Boot.
