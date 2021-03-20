@@ -88,9 +88,9 @@ of press `Build → Build Project` / `STRG + F9` in IntelliJ IDEA.
 
 Also, you can activate 'Build project automatically' in IntelliJ IDEA to let the IDE build changed classes automatically:
 
-Press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ IDEA, search for `Build project automatically` and enable it.
+- Press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ IDEA, search for `Build project automatically` and enable it.
 
-Press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ, search for `Registry...` and enable `compiler.automake.allow.when.app.running`.
+- Press `Help → Find Action...` / `CTRL + SHIFT + A` in IntelliJ, search for `Registry...` and enable `compiler.automake.allow.when.app.running`.
 
 Now when you press `File → Safe All` / `STRG + S` in IntelliJ to save all, IntelliJ should automatically build - only the changed files.
 
