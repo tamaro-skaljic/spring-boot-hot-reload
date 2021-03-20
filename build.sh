@@ -64,7 +64,7 @@ build () {
 
 buildDocker () {
 if ! [ -d "target/dependency" ]; then mkdir -p "target/dependency"; fi
-cd "target\dependency" || exit
+cd "target/dependency" || exit
 
 if [ -f "../$NAME-0.0.1-SNAPSHOT.jar" ]; then
   jar -xf ../"$NAME"-0.0.1-SNAPSHOT.jar
