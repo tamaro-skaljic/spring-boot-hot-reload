@@ -2,19 +2,19 @@
 start () {
   NAME=spring-boot-hot-reload
 
-  if [ "$1$2" == "" ]; then jarDev; exit; fi
+  if [ "$1$2" == "" ]; then jarDev; fi
 
-  if [ "$1$2" == "dev" ]; then jarDev; exit; fi
-  if [ "$1$2" == "prod" ]; then jarProd; exit; fi
+  if [ "$1$2" == "dev" ]; then jarDev; fi
+  if [ "$1$2" == "prod" ]; then jarProd; fi
 
-  if [ "$1$2" == "jar" ]; then jarDev; exit; fi
-  if [ "$1$2" == "docker" ]; then dockerDev; exit; fi
+  if [ "$1$2" == "jar" ]; then jarDev; fi
+  if [ "$1$2" == "docker" ]; then dockerDev; fi
 
-  if [ "$1 $2" == "jar dev" ]; then jarDev; exit; fi
-  if [ "$1 $2" == "docker dev" ]; then dockerDev; exit; fi
+  if [ "$1 $2" == "jar dev" ]; then jarDev; fi
+  if [ "$1 $2" == "docker dev" ]; then dockerDev; fi
 
-  if [ "$1 $2" == "jar prod" ]; then jarProd; exit; fi
-  if [ "$1 $2" == "docker prod" ]; then dockerProd; exit; fi
+  if [ "$1 $2" == "jar prod" ]; then jarProd; fi
+  if [ "$1 $2" == "docker prod" ]; then dockerProd; fi
 
   if [ "$1 $2" == "--help " ]; then usage;
   else
