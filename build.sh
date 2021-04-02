@@ -52,7 +52,7 @@ dockerProd () {
 
 # BUILD SECTION
 build () {
-  echo "Mode: $ENV $MODE";
+  echo "Env: $ENV Mode: $MODE";
   if [ $MODE == "DEV" ]; then ./mvnw -Dexclude.devtools=false clean package; fi
   if [ $MODE == "PROD" ]; then ./mvnw clean package; fi
 
