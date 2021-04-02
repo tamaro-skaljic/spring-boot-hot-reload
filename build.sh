@@ -16,9 +16,10 @@ start () {
   if [ "$1 $2" == "jar prod" ]; then jarProd; fi
   if [ "$1 $2" == "docker prod" ]; then dockerProd; fi
 
-  if [ "$1 $2" == "--help " ]; then usage;
+  if [ "$1 $2" == "--help " ]; then
+    usage
   else
-    notACommand "$@";
+    notACommand "$@"
   fi
   exit
 }
